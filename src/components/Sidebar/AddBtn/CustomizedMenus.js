@@ -214,7 +214,7 @@ function CustomizedMenus(props) {
     console.log("fsdfsdddddddddddddddDDDDDDDD", at);
     axios({
       method: "post",
-      url: `https://api.sarvvid-ai.com/upload?ping=${localStorage.getItem(
+      url: `http://14.102.108.122:3333/upload?ping=${localStorage.getItem(
         "ping"
       )}`,
       headers: {
@@ -320,7 +320,7 @@ function CustomizedMenus(props) {
           localStorage.setItem("fileSystem", JSON.stringify(data));
           axios({
             method: "post",
-            url: "https://api.sarvvid-ai.com/updatefileSystem",
+            url: "http://14.102.108.122:3333/updatefileSystem",
             headers: {
               "Content-type": "application/json",
               authtoken: localStorage.getItem("authtoken"),
@@ -349,7 +349,7 @@ function CustomizedMenus(props) {
           console.log("updated used value=======>>", val);
           // axios({
           //   method: "post",
-          //   url: `https://api.sarvvid-ai.com/updatedata?ping=${localStorage.getItem(
+          //   url: `http://14.102.108.122:3333/updatedata?ping=${localStorage.getItem(
           //     "ping"
           //   )}`,
           //   headers: {
@@ -433,7 +433,7 @@ function CustomizedMenus(props) {
     console.log("fsdfsdddddddddddddddDDDDDDDD", at);
     axios({
       method: "post",
-      url: `https://api.sarvvid-ai.com/upload?ping=${localStorage.getItem(
+      url: `http://14.102.108.122:3333/upload?ping=${localStorage.getItem(
         "ping"
       )}`,
       headers: {
@@ -596,7 +596,7 @@ function CustomizedMenus(props) {
           localStorage.setItem("fileSystem", JSON.stringify(data));
           axios({
             method: "post",
-            url: "https://api.sarvvid-ai.com/updatefileSystem",
+            url: "http://14.102.108.122:3333/updatefileSystem",
             headers: {
               "Content-type": "application/json",
               authtoken: localStorage.getItem("authtoken"),
@@ -624,7 +624,7 @@ function CustomizedMenus(props) {
           console.log("updated used value=======>>", val);
           axios({
             method: "post",
-            url: `https://api.sarvvid-ai.com/updatedata?ping=${localStorage.getItem(
+            url: `http://14.102.108.122:3333/updatedata?ping=${localStorage.getItem(
               "ping"
             )}`,
             headers: {
@@ -743,7 +743,7 @@ function CustomizedMenus(props) {
 
     axios({
       method: "post",
-      url: `https://api.sarvvid-ai.com/ipfs/upload`,
+      url: `http://14.102.108.122:3333/ipfs/upload`,
       headers: {
         "Content-type": "multipart/form-data",
         Authtoken: at,

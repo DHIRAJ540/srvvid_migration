@@ -72,7 +72,7 @@ const RequestViewFiles = () => {
   const downloadIpfsFile = async () => {
     try {
       const response = await axios.get(
-        `https://api.sarvvid-ai.com/ipfs/get/file/${fileHash}`
+        `http://14.102.108.122:3333/ipfs/get/file/${fileHash}`
       );
 
       fileDownload(response.data, fileHash);
@@ -165,7 +165,7 @@ const RequestViewFiles = () => {
 
     axios({
       method: "post",
-      url: `https://api.sarvvid-ai.com/ipfs/upload`,
+      url: `http://14.102.108.122:3333/ipfs/upload`,
       headers: {
         "Content-type": "multipart/form-data",
         Authtoken: at,

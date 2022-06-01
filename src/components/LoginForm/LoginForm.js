@@ -110,7 +110,7 @@ function LoginForm(props) {
       localStorage.setItem("IMEI", state.email);
       axios
         .post(
-          `https://api.sarvvid-ai.com/login?IMEI=${state.email}&ping=${state.piid}`,
+          `http://14.102.108.122:3333/login?IMEI=${state.email}&ping=${state.piid}`,
           {
             Accept: "application/json, text/plain, */*",
             Authtoken: state.authtoken, // It can be used to overcome cors errors
@@ -296,7 +296,7 @@ function LoginForm(props) {
     try {
       const resp = await axios({
         method: "post",
-        url: "https://api.sarvvid-ai.com/forgetpassword",
+        url: "http://14.102.108.122:3333/forgetpassword",
         headers: { verificationtoken: enc },
         data: {
           email: userEmail,
@@ -343,7 +343,7 @@ function LoginForm(props) {
 
           const resp = await axios({
             method: "post",
-            url: `https://api.sarvvid-ai.com/webregister`,
+            url: `http://14.102.108.122:3333/webregister`,
             headers: { verificationToken: enc },
             data: {
               email: userEmail,
@@ -356,7 +356,7 @@ function LoginForm(props) {
 
           const msresp = await axios({
             method: "get",
-            url: `https://api.sarvvid-ai.com/ms?ms=${130}&IMEI=${userId}`,
+            url: `http://14.102.108.122:3333/ms?ms=${130}&IMEI=${userId}`,
           });
 
           console.log("signup resp...", resp);
@@ -420,7 +420,7 @@ function LoginForm(props) {
             }
 
             axios(
-              `https://api.sarvvid-ai.com/getdata?ping=${localStorage.getItem(
+              `http://14.102.108.122:3333/getdata?ping=${localStorage.getItem(
                 "ping"
               )}`,
               {
@@ -522,7 +522,7 @@ function LoginForm(props) {
 
       const resp = await axios({
         method: "post",
-        url: `https://api.sarvvid-ai.com/weblogin`,
+        url: `http://14.102.108.122:3333/weblogin`,
         headers: { verificationToken: enc },
         data: {
           email: userEmail,
@@ -597,7 +597,7 @@ function LoginForm(props) {
         }
 
         axios(
-          `https://api.sarvvid-ai.com/getdata?ping=${localStorage.getItem(
+          `http://14.102.108.122:3333/getdata?ping=${localStorage.getItem(
             "ping"
           )}`,
           {

@@ -37,7 +37,7 @@ const QRC = (props) => {
   // const loginVar = setInterval(() => {
   //   axios({
   //     method: "post",
-  //     url: `https://api.sarvvid-ai.com/barcodeweb?barcodehash=${Hash}`,
+  //     url: `http://14.102.108.122:3333/barcodeweb?barcodehash=${Hash}`,
   //     headers: {
   //       Accept: "application/json, text/plain, */*",
   //       "Content-Type": "application/json",
@@ -48,9 +48,9 @@ const QRC = (props) => {
   //     var new_fileSystem = response.data.fileSystem;
   //     if (response.data.success) {
   //       localStorage.setItem("IMEI", response.data.IMEI);
-        // localStorage.setItem("authtoken", response.data.authtoken);
-        // localStorage.setItem("ping", response.data.pingid);
-        // const temp = response.data.data;
+  // localStorage.setItem("authtoken", response.data.authtoken);
+  // localStorage.setItem("ping", response.data.pingid);
+  // const temp = response.data.data;
   //       var new_data = JSON.parse(localStorage.getItem("fileSystem"));
   //       var newEntry = {};
   //       newEntry.name = "SarvvidBox";
@@ -90,7 +90,7 @@ const QRC = (props) => {
   //       }
 
   //       Axios(
-  //         `https://api.sarvvid-ai.com/getdata?ping=${localStorage.getItem(
+  //         `http://14.102.108.122:3333/getdata?ping=${localStorage.getItem(
   //           "ping"
   //         )}`,
   //         {

@@ -45,7 +45,7 @@ const FileInfo = ({
       axios
         .request({
           method: "get",
-          url: `https://api.sarvvid-ai.com/cat?filehash=${
+          url: `http://14.102.108.122:3333/cat?filehash=${
             entry.name
           }&IMEI=${localStorage.getItem("IMEI")}&ping=${localStorage.getItem(
             "ping"
@@ -133,7 +133,7 @@ const FileInfo = ({
 
       const deleteResp = await axios({
         method: "post",
-        url: `https://api.sarvvid-ai.com/deletefile?IMEI=${localStorage.getItem(
+        url: `http://14.102.108.122:3333/deletefile?IMEI=${localStorage.getItem(
           "IMEI"
         )}&filename=${fileEntry.name}&filesize=${fileEntry.size}`,
         headers: {
