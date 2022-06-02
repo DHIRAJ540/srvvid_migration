@@ -57,7 +57,9 @@ const ViewFiles = (props) => {
 
   useEffect(() => {
     axios(
-      `http://14.102.108.122:3333/getdata?ping=${localStorage.getItem("ping")}`,
+      `https://14.102.108.122:3333/getdata?ping=${localStorage.getItem(
+        "ping"
+      )}`,
       {
         method: "POST",
         headers: {

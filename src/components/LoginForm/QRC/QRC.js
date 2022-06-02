@@ -37,7 +37,7 @@ const QRC = (props) => {
   // const loginVar = setInterval(() => {
   //   axios({
   //     method: "post",
-  //     url: `http://14.102.108.122:3333/barcodeweb?barcodehash=${Hash}`,
+  //     url: `https://14.102.108.122:3333/barcodeweb?barcodehash=${Hash}`,
   //     headers: {
   //       Accept: "application/json, text/plain, */*",
   //       "Content-Type": "application/json",
@@ -90,7 +90,7 @@ const QRC = (props) => {
   //       }
 
   //       Axios(
-  //         `http://14.102.108.122:3333/getdata?ping=${localStorage.getItem(
+  //         `https://14.102.108.122:3333/getdata?ping=${localStorage.getItem(
   //           "ping"
   //         )}`,
   //         {

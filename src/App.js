@@ -111,7 +111,7 @@ function App() {
   //   // localStorage.setItem("theme", "light")
 
   //   Axios(
-  //     `http://14.102.108.122:3333/getdata?ping=${localStorage.getItem(
+  //     `https://14.102.108.122:3333/getdata?ping=${localStorage.getItem(
   //       "ping"
   //     )}`,
   //     {

@@ -282,7 +282,7 @@ const RightPane = (props) => {
       uniqueID: localStorage.getItem("IMEI"),
     };
     const result = await axios.post(
-      "http://14.102.108.122:3333/payment/orders",
+      "https://14.102.108.122:3333/payment/orders",
       orderData
     );
 
@@ -313,7 +313,7 @@ const RightPane = (props) => {
         };
 
         const result = await axios.post(
-          "http://14.102.108.122:3333/payment/success",
+          "https://14.102.108.122:3333/payment/success",
           data
         );
 
@@ -384,7 +384,7 @@ const RightPane = (props) => {
 
     try {
       const result = await axios.post(
-        "http://14.102.108.122:3333/customplan/quote",
+        "https://14.102.108.122:3333/customplan/quote",
         data
       );
 

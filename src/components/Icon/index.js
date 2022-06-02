@@ -183,7 +183,7 @@ import { Modal } from "@material-ui/core";
 
 //       // await axios({
 //       //   method: "post",
-//       //   url: `http://14.102.108.122:3333/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${this.props.entry.name}&filesize=${this.props.entry.size}`,
+//       //   url: `https://14.102.108.122:3333/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${this.props.entry.name}&filesize=${this.props.entry.size}`,
 //       //   headers: {
 //       //     "Content-type": "application/json",
 //       //     authtoken: localStorage.getItem("authtoken"),
@@ -215,7 +215,7 @@ import { Modal } from "@material-ui/core";
 
 //       const deleteResp = await axios({
 //         method: 'post',
-//         url: `http://14.102.108.122:3333/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${this.props.entry.name}&filesize=${this.props.entry.size}`,
+//         url: `https://14.102.108.122:3333/deletefile?IMEI=${localStorage.getItem("IMEI")}&filename=${this.props.entry.name}&filesize=${this.props.entry.size}`,
 //         headers: {Accept: "application/json, text/plain, */*",
 //                   authtoken: localStorage.getItem("authtoken")},
 //         data: JSON.stringify(obj)
@@ -229,7 +229,7 @@ import { Modal } from "@material-ui/core";
 
 //       const resp =  await axios({
 //             method: "post",
-//             url: "http://14.102.108.122:3333/updatefileSystem",
+//             url: "https://14.102.108.122:3333/updatefileSystem",
 //             headers: {
 //               "Content-type": "application/json",
 //               authtoken: localStorage.getItem("authtoken"),
@@ -281,7 +281,7 @@ import { Modal } from "@material-ui/core";
 //                   axios
 //                     .request({
 //                       method: "get",
-//                       url: `http://14.102.108.122:3333/cat?filehash=${
+//                       url: `https://14.102.108.122:3333/cat?filehash=${
 //                         entry.name
 //                       }&IMEI=${localStorage.getItem(
 //                         "IMEI"
@@ -511,7 +511,7 @@ const Icon = (props) => {
 
       const deleteResp = await axios({
         method: "post",
-        url: `http://14.102.108.122:3333/deletefile?IMEI=${localStorage.getItem(
+        url: `https://14.102.108.122:3333/deletefile?IMEI=${localStorage.getItem(
           "IMEI"
         )}&filename=${props.entry.name}&filesize=${props.entry.size}`,
         headers: {
@@ -609,7 +609,7 @@ const Icon = (props) => {
                   axios
                     .request({
                       method: "get",
-                      url: `http://14.102.108.122:3333/cat?filehash=${
+                      url: `https://14.102.108.122:3333/cat?filehash=${
                         entry.name
                       }&IMEI=${localStorage.getItem(
                         "IMEI"
